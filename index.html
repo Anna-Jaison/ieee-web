@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEEE SB CEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="IMAGES\IEEE (2).png" href="IMAGES\IEEE (2).png">
+  </head>
+  <body>
+    <div class="header">
+        <img class="logo" src="IMAGES\IEEE-SB-logo-white-web.png" formaction="index.html">
+        <span class="t1">IEEE SB CEC</span>
+        <span class="t2">COLLEGE OF ENGINEERING CHENGANNUR</span>
+        <button class="openbtn" onclick="openNav()">☰</button> 
+<span class="i">
+        <a href="https://www.linkedin.com/company/cecieee/" class="fa fa-linkedin"></a>
+        <a href="https://www.ieee.org/" class="fa fa-globe"></a>
+        <a href="https://www.instagram.com/ieee_sb_cec/" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/IEEECEC/" class="fa fa-facebook"></a></span>
+        
+     
+        
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="https://www.ieee.org/"><i class="fa fa-institution"></i>IEEE.ORG</a>
+          <a href="https://ieeekerala.org/"><i class="fa fa-bullhorn "></i> IEEE KERALA SECTION</a>
+          <a href="https://standards.ieee.org/"><i class="fa fa-fw fa-envelope"></i>IEEE STANDARDS</a>
+          <a href="https://www.ieee.org/membership/join/index.html"><i class="fa fa-group"></i>JOIN IEEE</a>
+        </div>
+         
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+  
+    
+      
+      <div class="slideshow-container fade">
+
+        <!-- Full images with numbers and message Info -->
+        <div class="Containers">
+          <div class="MessageInfo">1 / 5</div>
+          <img src="IMAGES\5.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+      
+        <div class="Containers">
+          <div class="MessageInfo">2 / 5</div>
+          <img src="IMAGES\7.jpg" style="width:100%" >
+          <div class="Info"></div>
+        </div>
+
+        <div class="Containers">
+          <div class="MessageInfo">3 / 5</div>
+          <img src="IMAGES\9.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+    
+        <div class="Containers">
+          <div class="MessageInfo">4 / 5</div>
+          <img src="IMAGES\6.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+
+        <div class="Containers">
+          <div class="MessageInfo">5 / 5</div>
+          <img src="IMAGES\8.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+
+      
+        <!-- Back and forward buttons -->
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The circles/dots -->
+      <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dots" onclick="currentSlide(4)"></span>
+        <span class="dots" onclick="currentSlide(5)"></span>
+      </div> 
+      <script>
+        var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+      </script>
+    </div>
+  
+   <div class="pg"><h2>ABOUT US</h2></div>
+   <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="IMAGES\1.jpg" alt="Paris" style="width:600px;height:400px">
+      </div>
+      <div class="flip-box-back">
+        <h3>The Government College of Engineering Chengannur (established in 1993), commonly known as CEC, is an engineering institute in the state of Kerala, India. The college was set up under the auspices of the Institute of Human Resources Development (IHRD) and is affiliated with the APJ Abdul Kalam Technological University (KTU). It currently offers undergraduate degrees in four engineering streams and two postgraduate programs.</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner" >
+      <div class="flip-box-front">
+        <img src="IMAGES\ieee.jpg" alt="Paris" style="width:600px;height:400px">
+        
+      </div>
+      <div class="flip-box-back">
+        <h3>IEEE Student Branch College of Engineering Chengannur was formed in mid-1997, with the goal of keeping the students in touch with advancing technology. It is equipped with an IEEE library that was inaugurated in December 1999 and currently functions as the headquarters of IEEE SB CEC. The Student Branch comes under the Kochi Hub of IEEE Kerala Section and is one of the most active Student Branches in the country. IEEE SB CEC has made numerous contributions to its student community that has received widespread recognition across the globe and is the first Student Branch in the Asia-Pacific Region to establish a Women in Engineering Affinity Group.</h3> 
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="pg"><h2>OUR IEEE FAMILY MEMBERS</h2></div>
+  <div class="row">
+    <div class="column">
+      <img src="IMAGES\cs-logo.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMAGES\ias-logo.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMAGES\pes-logo.png" alt="Mountains" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMAGES\ras-logo.png" alt="Mountains" style="width:100%">
+    </div> 
+    <div class="column">
+      <img src="IMAGES\sight-logo.png" alt="Mountains" style="width:100%">
+    </div> 
+    <div class="column">
+      <img src="IMAGES\sscs-logo.png" alt="Mountains" style="width:100%">
+    </div> 
+    <div class="column">
+      <img src="IMAGES\wie-logo.png" alt="Mountains" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMAGES\ims-logo.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-user"></i></p>
+        <h3>447</h3>
+        <p>Total Members</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-calendar-check-o"></i></p>
+        <h3>120</h3>
+        <p>Events per year</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-line-chart"></i></p>
+        <h3>27</h3>
+        <p>Awards Won</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-globe"></i></p>
+        <h3>100+</h3>
+        <p>Supporters</p>
+      </div>
+    </div>
+    
+  
+<div class="footer">
+  <h2>Questions? Call 2255 </h2>
+  <div class="row"> 
+    <div class="col">
+      <a href="#">FAQ</a>
+      <a href="#">Want to be an IEEE member?</a>
+      <a href="#">Get started here</a>
+      
+    </div>
+    <div class="col">
+      <a href="#">IEE Student Branch,</a>
+      <a href="#">College of Engineering,</a>
+      <a href="#">Chengannur Alapuzha, Kerala</a>
+      <a href="#">Pin:689121</a>
+      <a href="#">Email: chairman_ieee@ceconline.edu</a>
+    </div>
+    <div class="col"></div>
+      <a href="#">IEE Student Branch,</a>
+      <a href="#">College of Engineering,</a>
+      <a href="#">Pin:689121</a>
+      <a href="#">Email: chairman_ieee@ceconline.edu</a>
+    
+    <div class="row">
+      <a href="#"><a>FOLLOW US</a>
+       <a href="https://www.instagram.com/ieee_sb_cec/" class="fa fa-instagram"></a>
+     <a href="https://www.linkedin.com/company/cecieee/" class="fa fa-linkedin"></a>
+      <a href="https://www.facebook.com/IEEECEC/" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/channel/UCXh6fVbDGCIidsVHabpZFiw" class="fa fa-youtube"></a>
+    </div>
+</div>
+  </div>
+  <p class="copyright-txt">ieee sb cec</p>
+ </div>
+</div>
+</body>
+</html>
+    
+      
